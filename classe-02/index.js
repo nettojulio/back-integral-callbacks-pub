@@ -4,3 +4,11 @@ const endereços = [
     { cep: 00222444, rua: "Avenida Paralela" },
     { cep: 11222333, rua: "Rua Carlos Gomes" },
 ];
+
+const buscaCEP = 00222444;
+
+const endereçosFind = endereços.find((x) => {
+    if (x.cep === buscaCEP) {
+        console.log(x.rua);
+    }
+});
